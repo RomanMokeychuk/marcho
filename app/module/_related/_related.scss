@@ -201,6 +201,27 @@
     }
   }
 }
-.star {
-  margin: 0 auto;
+
+.product-item__box {
+  .star {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 860px) {
+  .related {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .related {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0 25px;
+    }
+  }
 }

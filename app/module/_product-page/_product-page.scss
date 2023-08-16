@@ -111,6 +111,7 @@
     img {
       width: 560px;
       height: 650px;
+      object-fit: cover;
     }
   }
 }
@@ -413,5 +414,129 @@
   &__btn {
     border: none;
     @extend %btn;
+  }
+}
+
+@media (max-width: 1230px) {
+  .product-slide {
+    &__thumb {
+      display: none;
+    }
+  }
+  .product-one {
+    &__slide {
+      width: auto;
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .product-one {
+    &__inner {
+      display: block;
+    }
+    &__content {
+      width: 100%;
+      margin-top: 35px;
+    }
+    &__item {
+      &__star {
+        margin-left: 20px;
+      }
+    }
+    &__box {
+      justify-content: left;
+    }
+  }
+  .product-one__slide {
+    margin-right: 0;
+  }
+  .product-slide {
+    &__big {
+      width: 100%;
+      img {
+        width: auto;
+        margin: 0 auto;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .comments-form {
+    &__box-input {
+      display: block;
+      margin-bottom: 0;
+    }
+    &__text-input {
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    &__label {
+      margin-right: 0;
+      display: block;
+    }
+    &__rating-title {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .product-tabs {
+    &__top-item {
+      display: block;
+      margin-bottom: 10px;
+      + .product-tabs__top-item {
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .product-page {
+    padding: 60px 0;
+  }
+  .product-slide {
+    &__big {
+      img {
+        height: 400px;
+      }
+    }
+  }
+  .product-one {
+    &__price {
+      margin-bottom: 5px;
+      padding-left: 5px;
+    }
+    &__item {
+      &__star {
+        .star {
+          margin: 0;
+        }
+      }
+    }
+    &__item-btn {
+      margin-left: 0;
+    }
+  }
+
+  .product-filter {
+    &__size {
+      label {
+        margin-right: -1px;
+      }
+    }
+  }
+  .comments {
+    &__img {
+      display: none;
+    }
+    &__content-date {
+      display: none;
+    }
   }
 }

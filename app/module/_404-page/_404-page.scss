@@ -15,6 +15,7 @@
     @extend %roboto-700;
     font-size: 48px;
     margin-left: -4px;
+    line-height: 52px;
   }
   &__text {
     margin-bottom: 60px;
@@ -27,5 +28,20 @@
     padding: 20px 35px;
     @extend %roboto-400;
     box-shadow: 0 5px 25px rgba(254, 62, 87, 0.35);
+  }
+}
+
+@media (max-width: 1230px) {
+  .page-404 {
+    &__img {
+      width: 40%;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .page-404 {
+    &__img {
+      display: none;
+    }
   }
 }

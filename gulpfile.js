@@ -15,7 +15,7 @@ function browsersync() {
     server: {
       baseDir: "app/",
     },
-    notify: false,
+    notify: true,
   });
 }
 
